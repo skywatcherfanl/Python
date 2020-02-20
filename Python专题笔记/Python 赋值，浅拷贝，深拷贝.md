@@ -53,9 +53,9 @@ b = a
 ```
 a 指向对象3; b = a,此赋值操作，b也指向3。   
 <div align=center>
-<img width="300" src="img/2.2.PNG"/>
+<img width="450" src="img/2.2.PNG"/>
 </div>
-<div align=center>图2.2 赋值与引用</div>
+<div align=center>图2.1 赋值与引用</div>
 
 可以看出，a和b都引用了同一个对象。
 
@@ -65,9 +65,9 @@ b = a
 a = 'spam'
 ```
 <div align=center>
-<img width="300" src="img/2.3.PNG"/>
+<img width="400" src="img/2.3.PNG"/>
 </div>
-<div align=center>图2.3 a重新指向另一个对象。</div>
+<div align=center>图2.2 a重新指向另一个对象。</div>
 
 Python 中的赋值语句不会创建对象的拷贝，仅仅只是将名称绑定至一个对象。对于不可变对象，通常没什么差别，但是处理可变对象或可变对象的集合时，你可能需要创建这些对象的 “真实拷贝”，也就是在修改创建的拷贝时不改变原始的对象。
 
