@@ -53,7 +53,7 @@ b = a
 ```
 a 指向对象3; b = a,此赋值操作，b也指向3。   
 <div align=center>
-<img width="300" src="img/2.2.jpg"/>
+<img width="300" src="img/2.2.PNG"/>
 </div>
 <div align=center>图2.2 赋值与引用</div>
 
@@ -65,7 +65,7 @@ b = a
 a = 'spam'
 ```
 <div align=center>
-<img width="300" src="img/2.3.jpg"/>
+<img width="300" src="img/2.3.PNG"/>
 </div>
 <div align=center>图2.3 a重新指向另一个对象。</div>
 
