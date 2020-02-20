@@ -72,7 +72,7 @@ a = 'spam'
 <div align=center>
 <img width="400" src="img/2.3.PNG"/>
 </div>
-<div align=center>图2.2 a重新指向另一个对象。</div>
+<div align=center>图2.2 变量修改</div>
 
 Python 中的赋值语句不会创建对象的拷贝，仅仅只是将名称绑定至一个对象。对于不可变对象，通常没什么差别，但是处理可变对象或可变对象的集合时，你可能需要创建这些对象的 “真实拷贝”，也就是在修改创建的拷贝时不改变原始的对象。
 
