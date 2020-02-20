@@ -7,7 +7,13 @@ Python 赋值，浅拷贝，深拷贝
 
 # 0 对象
 
-在Python里，一切皆对象，完全的面向对象。
+在Python里，一切皆对象，完全的面向对象。  
+#### Python对象三要素：Id，Type，Value
+> Id：唯一标识一个对象
+> Type：标识对象的类型
+> Value：对象的值
+a is b 判断 a 对象是否就是 b 对象（通过id来判断）  
+a == b 判断 a 对象的值是否和 b 对象的值相等（通过value来判断）  
 
 <div align=center>
 <img width="500" src="img/1.1.jpg"/>
@@ -24,7 +30,7 @@ print(id(lst)==id(new_list))
 ```
 从字面上看，上述语句创建了变量 lst 和 new_list，并且 lst 和 new_list 的赋值都为一个列表。但是，Python 的赋值语句并不会复制对象，而是会重新创建一个对象的引用。C 程序更新的是内存单元中存放的值，而 Python更新的是变量的指向，是一种完全不同的机制。
 <div align=center>
-<img width="500" src="img/1.2.jpg"/>
+<img width="300" src="img/1.2.jpg"/>
 </div>
 <div align=center>图1.2 赋值与引用</div>
 
