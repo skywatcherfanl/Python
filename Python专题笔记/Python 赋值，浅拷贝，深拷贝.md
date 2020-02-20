@@ -48,19 +48,26 @@ a == b 判断 a 对象的值是否和 b 对象的值相等（通过value来判�
 先来看一下 Python 中的赋值与引用。
 
 ``` python
-lst = [1, 2, 3]
-new_list = lst
-print(id(lst)==id(new_list))
+a = 3
+b = a
 ```
-从字面上看，上述语句创建了变量 lst 和 new_list，并且 lst 和 new_list 的赋值都为一个列表。但是，Python 的赋值语句并不会复制对象，而是会重新创建一个对象的引用。C 程序更新的是内存单元中存放的值，而 Python更新的是变量的指向，是一种完全不同的机制。
+a 指向对象3; b = a,此赋值操作，b也指向3。   
 <div align=center>
-<img width="300" src="img/1.2.jpg"/>
+<img width="300" src="img/2.2.jpg"/>
 </div>
-<div align=center>图1.2 赋值与引用</div>
+<div align=center>图2.2 赋值与引用</div>
 
-可以看出，lst 和 new_list 都引用了同一个列表。
+可以看出，a和b都引用了同一个对象。
 
- 
+``` python
+a = 3
+b = a
+a = 'spam'
+```
+<div align=center>
+<img width="300" src="img/2.3.jpg"/>
+</div>
+<div align=center>图2.3 a重新指向另一个对象。</div>
 
 Python 中的赋值语句不会创建对象的拷贝，仅仅只是将名称绑定至一个对象。对于不可变对象，通常没什么差别，但是处理可变对象或可变对象的集合时，你可能需要创建这些对象的 “真实拷贝”，也就是在修改创建的拷贝时不改变原始的对象。
 
