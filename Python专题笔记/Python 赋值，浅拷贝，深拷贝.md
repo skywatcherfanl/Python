@@ -37,7 +37,8 @@ a is b 判断 a 对象是否就是 b 对象（通过id来判断）
 a == b 判断 a 对象的值是否和 b 对象的值相等（通过value来判断）   
 
 ### 可变对象与不可变对象
-> 不可变对象 ：int, float, complex, str,bool, tuple, frozenset
+Python的对象分成两类：可变对象和不可变对象。所谓可变对象是指，对象的内容是可变的，一般是指引用类型。而不可变的对象则相反，表示其内容不可变。
+> 不可变对象 ：int, float, complex, str,bool, tuple, frozenset    
 > 可变对象   ：list, dict, set
 
 
