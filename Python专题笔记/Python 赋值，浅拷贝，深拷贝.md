@@ -30,7 +30,7 @@ Python 赋值，浅拷贝，深拷贝
 <div align=center>图1.1 对象三要素</div>
 
 > Id：唯一标识一个对象   
-> Type：标识对象的类型  
+> Type：标识对象的类型    
 > Value：对象的值  
 
 a is b 判断 a 对象是否就是 b 对象（通过id来判断）   
