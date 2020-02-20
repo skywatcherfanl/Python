@@ -22,6 +22,13 @@ lst = [1, 2, 3]
 new_list = lst
 print(id(lst)==id(new_list))
 ```
+从字面上看，上述语句创建了变量 lst 和 new_list，并且 lst 和 new_list 的赋值都为一个列表。但是，Python 的赋值语句并不会复制对象，而是会重新创建一个对象的引用。C 程序更新的是内存单元中存放的值，而 Python更新的是变量的指向，是一种完全不同的机制。
+<div align=center>
+<img width="500" src="img/1.2.jpg"/>
+</div>
+<div align=center>图1.2 赋值与引用</div>
+
+可以看出，lst 和 new_list 都引用了同一个列表。
 
  
 
