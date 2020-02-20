@@ -9,11 +9,11 @@ Python 赋值，浅拷贝，深拷贝
 
 在Python里，一切皆对象，完全的面向对象。  
 #### Python对象三要素：Id，Type，Value
-> Id：唯一标识一个对象
-> Type：标识对象的类型
-> Value：对象的值
-a is b 判断 a 对象是否就是 b 对象（通过id来判断）  
-a == b 判断 a 对象的值是否和 b 对象的值相等（通过value来判断）  
+> Id：唯一标识一个对象   
+> Type：标识对象的类型  
+> Value：对象的值  
+a is b 判断 a 对象是否就是 b 对象（通过id来判断）   
+a == b 判断 a 对象的值是否和 b 对象的值相等（通过value来判断）     
 
 <div align=center>
 <img width="500" src="img/1.1.jpg"/>
