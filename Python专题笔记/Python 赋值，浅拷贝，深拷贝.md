@@ -96,7 +96,7 @@ b = a.copy(), a 和 b 是一个独立的对象，但他们的子对象还是指�
 <div align=center>
 <img width="400" src="img/3.2.png"/>
 </div>
-<div align=center>图3.2 浅拷贝</div>
+<div align=center>图3.2 浅拷贝</div> 
 
 ## 3.3 深度拷贝 
 b = copy.deepcopy(a), a 和 b 完全拷贝了父对象及其子对象，两者是完全独立的。
