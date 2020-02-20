@@ -7,7 +7,7 @@ Python 赋值，浅拷贝，深拷贝
 
 # 1 赋值
 <div align=center>
-<img width="500" src="image/1.1.jpg"/>
+<img width="500" src="img/1.1.jpg"/>
 </div>
 <div align=center>图1.1 对象三要素</div>
 
