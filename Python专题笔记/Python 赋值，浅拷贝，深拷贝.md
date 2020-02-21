@@ -76,9 +76,6 @@ a = 'spam'
 
 Python 中的赋值语句不会创建对象的拷贝，仅仅只是将名称绑定至一个对象。对于不可变对象，通常没什么差别，但是处理可变对象或可变对象的集合时，你可能需要创建这些对象的 “真实拷贝”，也就是在修改创建的拷贝时不改变原始的对象。
 
------------
-> [Python3学习笔记：Python中的赋值操作](https://blog.csdn.net/DFIE1234/article/details/86477311?utm_source=distribute.pc_relevant.none-task)
-
 # 3 浅拷贝和深拷贝
 
 浅拷贝：浅拷贝意味着构造一个新的集合对象，然后用原始对象中找到的子对象的引用来填充它。从本质上讲，浅层的复制只有一层的深度。复制过程不会递归，因此不会创建子对象本身的副本。    
@@ -104,3 +101,7 @@ b = copy.deepcopy(a), a 和 b 完全拷贝了父对象及其子对象，两者�
 <img width="400" src="img/3.3.png"/>
 </div>
 <div align=center>图3.3 深拷贝</div>
+
+-----------
+> [Python3学习笔记：Python中的赋值操作](https://blog.csdn.net/DFIE1234/article/details/86477311?utm_source=distribute.pc_relevant.none-task)
+> [Python 直接赋值、浅拷贝和深度拷贝解析](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
