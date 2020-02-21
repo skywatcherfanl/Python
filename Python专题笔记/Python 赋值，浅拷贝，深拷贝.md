@@ -41,8 +41,6 @@ Python的对象分成两类：可变对象和不可变对象。所谓可变对�
 > 不可变对象 ：int, float, complex, str,bool, tuple, frozenset    
 > 可变对象   ：list, dict, set
 
-
-
 ## 1.3 引用
 
 1、在Python中从变量到对象的连接称作引用。  
@@ -116,7 +114,22 @@ a 和 b 是一个独立的对象，但他们的子对象还是指向统一对象
 <div align=center>图3.2 浅拷贝</div> 
 
 ## 3.3 深度拷贝 
-b = copy.deepcopy(a), a 和 b 完全拷贝了父对象及其子对象，两者是完全独立的。
+
+``` python
+import copy
+a = {1:[1,2,3]}
+b = copy.deepcopy(a)
+print(id(a) == id(b))
+print(id(a[1]) == id(b[1]))
+print(id(a[1][0]) == id(b[1][0]))
+``` 
+输出：
+``` 
+False
+False
+True
+```  
+a 和 b 完全拷贝了父对象及其子对象，两者是完全独立的。对于a[1][0]和b[1][0]还是对于对象1的引用，并没有重新新建一个对象，这符合python的存储机制。
 <div align=center>
 <img width="400" src="img/3.3.png"/>
 </div>
