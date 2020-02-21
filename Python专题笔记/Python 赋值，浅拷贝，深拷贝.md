@@ -90,6 +90,7 @@ print(id(a) == id(b))
 ``` 
 True
 ``` 
+赋值引用，a 和 b 都指向同一个对象。
 <div align=center>
 <img width="400" src="img/3.1.png"/>
 </div>
@@ -97,7 +98,18 @@ True
 
 
 ## 3.2 浅拷贝 
-b = a.copy(), a 和 b 是一个独立的对象，但他们的子对象还是指向统一对象（是引用）。
+``` python
+a = {1:[1,2,3]}
+b = a.copy()
+print(id(a) == id(b))
+print(id(a[1]) == id(b[1]))
+``` 
+输出：
+``` 
+False
+True
+``` 
+a 和 b 是一个独立的对象，但他们的子对象还是指向统一对象（是引用）。
 <div align=center>
 <img width="400" src="img/3.2.png"/>
 </div>
