@@ -103,5 +103,5 @@ b = copy.deepcopy(a), a 和 b 完全拷贝了父对象及其子对象，两者�
 <div align=center>图3.3 深拷贝</div>
 
 -----------
-> [Python3学习笔记：Python中的赋值操作](https://blog.csdn.net/DFIE1234/article/details/86477311?utm_source=distribute.pc_relevant.none-task)
+> [Python3学习笔记：Python中的赋值操作](https://blog.csdn.net/DFIE1234/article/details/86477311?utm_source=distribute.pc_relevant.none-task)    
 > [Python 直接赋值、浅拷贝和深度拷贝解析](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
